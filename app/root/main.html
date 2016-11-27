@@ -19,12 +19,12 @@
             <div ui-view="content" flex style="background: transparent"></div>
         </div>
         <div id="searchbox">
-            <!-- <input ng-cloak id="autocomplete-input" class="gm-style-mtc controls" type="text" placeholder="Where to?" ng-show="map"> -->
+            <input ng-cloak id="autocomplete-input" class="gm-style-mtc controls" type="text" placeholder="Where to?" ng-show="map">
         </div>
-        <map-component map-source="getMap()"></map-component>
         <side-nav-slide>
             <div ng-include="'templates/root/slideContent.html'"></div>
-        </side-nav-slide>
+        </side-nav-slide>        
+        <map-component map-source="getMap()"></map-component>
         <div class="clr-bounds">
             <button>Clear all Points</button>
         </div>
